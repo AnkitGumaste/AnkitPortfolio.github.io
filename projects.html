@@ -42,7 +42,33 @@
 										AMBA Based AHB2APB Bridge</a></h2>
 									</header>
 									<a href="https://github.com/AnkitGumaste/AHB2APB-Bridge" class="image fit"><img src="images/ahb2apb.png" alt="" /></a>
-									<p>The AHB to APB bridge acts as a mediator between the AHB and APB buses, enabling communication between them. It translates the signals used by each bus, allowing devices connected to the APB bus to be accessed by the microprocessor through the AHB bus.<br>Here I wrote the verilog code for differnt modules invoved and also testbench to simulate and verify the design.</p>
+									<p>The AHB and APB are two different bus protocols commonly used in SoC designs. The AHB is a high-performance bus protocol that is typically used for connecting high-speed components like processors, memory controllers, and DMA controllers. On the other hand, the APB is a lower-performance bus protocol used for connecting slower peripherals like timers, UARTs, and I/O controllers.
+
+										The AHB to APB bridge acts as an interface between the AHB and APB buses allowing the AHB master to access and control APB peripherals.
+										
+										Designed and implemented the AHB to APB bridge using Xilinx Vivado. 
+										Developed Verilog code for various modules of the bridge:
+										
+										
+										
+										
+										<ul>
+											<li>AHB master</li>
+											<li>AHB slave</li>
+											<li>APB FSM Controller</li>
+											<li>APB slave </li>
+										</ul>
+										
+										Wrote Verilog testbench for verifying the functionality for: 
+										<ul>
+											<li>single-read</li>
+											<li>single-write</li>
+											<li>burst-read</li>
+											<li>burst-write</li>
+										</ul>
+										
+									    
+										</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/AnkitGumaste/AHB2APB-Bridge" class="button">View Project</a></li>
 									</ul>
@@ -51,13 +77,17 @@
 								<article>
 									<header>
 										
-										<h2><a href="#">RTL to GDSII<br />
+										<h2><a href="https://github.com/AnkitGumaste/RTL-to-GDSII">RTL to GDSII<br />
 										</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/rtl2gdsii.png" alt="" /></a>
-									<p>We will start by coding a design in VHDL or Verilog. We will simulate the coded design, followed by design synthesis and optimization. We will then run equivalency checks at different stages of the flow. After synthesizing the design, We will floorplan, and place-and-route the synthesized netlist while meeting timing. We will run a gate-level simulation throughout the flow. Finally, we will write out a GDSII file.</p>
+									<a href="https://github.com/AnkitGumaste/RTL-to-GDSII" class="image fit"><img src="images/rtl2gdsii.png" alt="" /></a>
+									<p>RTL (Register Transfer Level) to GDSII (Graphic Data System version II) is a multi-step process involved in designing and manufacturing integrated circuits (ICs). The RTL represents the design description at the register transfer level, which captures the behavior and functionality of the circuit. GDSII, on the other hand, is a file format used to represent the physical layout of the IC.
+
+										<br>Designed and implemented Johnson Counter from using Cadence tools.
+										
+										<br>Counter was designed using verilog, Incisive was used for functional simulation, Genus was used for synthesis of the design and Innovus was used for floor planning, power planning, routing, timing and GDSII file extraction.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Coming soon</a></li>
+										<li><a href="https://github.com/AnkitGumaste/RTL-to-GDSII" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
@@ -67,7 +97,9 @@
 										DCT</a></h2>
 									</header>
 									<a href="https://github.com/AnkitGumaste/JPEG_Compression" class="image fit"><img src="images/lena.jpg" alt="" /></a>
-									<p>Image Compression is an algorithm which reduces the size of the data to reduce the amount of space required to store the data. The Discrete cosine transform (DCT) is a method for transforming a signal or image from spatial domain to its respective frequency domain component. In this project, MATLAB was used to write and execute the algorithm.
+									<p>Image compression using 2D-DCT is a technique for reducing the size of images while preserving their quality. 
+										The algorithm for Image Compression was implemented in MATLAB. The algorithm allows for different levels of compression using Q-factor. 
+										For a Q-factor of 50, compression of 96.22% was achieved for standard Lena image.
 										</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/AnkitGumaste/JPEG_Compression" class="button">View Project</a></li>
@@ -80,8 +112,9 @@
 											Op-Amps</a></h2>
 									</header>
 									<a href="https://github.com/AnkitGumaste/Analog-Multiplier-Circuit" class="image fit"><img src="images/analog mult.png" alt="" /></a>
-									<p>An analog multiplier is a device having two input ports and an output port. The signal at the output is the product of the two input signals. If both input and output signals are voltages, the transfer characteristic is the product of the two voltages multiplied by a scaling factor, K .
-										The proposed analog multiplier is designed using 
+									<p>Analog multiplier circuit takes two analog signals as input and produces an output which is their product.
+										Designed the circuit using NI Multisim. 
+										The circuit consisted of:
 										<br>• Logarithmic amplifiers 
 										<br>• antilogarithmic amplifiers 
 										<br>• summing amplifiers</p>
@@ -97,8 +130,8 @@
 										</a></h2>
 									</header>
 									<a href="https://github.com/AnkitGumaste/Huffman_Encoding" class="image fit"><img src="images/huffman.png" alt="" /></a>
-									<p>Huffman encoding algorithm was implemented in MATLAB. 
-										The Huffman dictionary for the encoding algorithm was implemented without built-in function.</p>
+									<p>Huffman encoding is a lossless data compression technique used to reduce the size of data by assigning variable-length codes to different symbols based on their frequency of occurrence. Huffman encoding algorithm was implemented in MATLAB. 
+										</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/AnkitGumaste/Huffman_Encoding" class="button">View Project</a></li>
 									</ul>
